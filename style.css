@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h2,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+/*Inicio de menu*/
+.navbar{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.navbar-brand{
+    color: white;
+}
+.nav-link{
+color: white;
+transition: 0.2s linear;
+}
+
+.nav-link:hover{
+    color: gold;
+}
+/*Despliegue de menu*/
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+    transition: 0.2s linear;
+}
+
+.dropdown-item:hover{
+    background-color: gold;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+ }
+/*Fin despliegue de menu*/
+
+
+
+.cover {
+    height: 400px;
+    background-image: url(Imgenes/rsz_giammarco-boscaro-zeh-ljawhtg-unsplash.jpg);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card {
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+.card-title {
+    min-height: 3rem;
+}
+
+.card-text {
+    min-height: 11rem;
+}
+
+.responsive-iframe {
+    position: relative;
+    padding-top: 56.26%;
+}
+
+.responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Slider de imagenes*/
+.slider {
+    overflow-x: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slider {
+    overflow-x: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transform: translateX(0);
+    animation: slider 15s infinite;
+}
+
+.image-container {
+    width: 100%;
+    padding-top: 45%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+    45%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    70%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-300%);
+    }
+    95%{
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Footer*/
+footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a li {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: gold;
+}
+
+.footer-botton {
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botton p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.bi{
+font-size: 19px;
+margin-right: 10px;
+color: gold;
+}
+
+.fa-brands{
+    font-size: 20px;
+}
