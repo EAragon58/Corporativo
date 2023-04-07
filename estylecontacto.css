@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h2,h2,h3,h4,h5 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+*Inicio de menu*/
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: gold;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    transition: 0.2s linear;
+}
+
+.nav-link:hover {
+    color: gold;
+}
+
+/*Despliegue de menu*/
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+    transition: 0.2s linear;
+}
+
+.dropdown-item:hover {
+    background-color: gold;
+}
+/*
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+*/
+/*Fin despliegue de menu*/
+
+/*Estilos a formulario de contacto*/
+
+section {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    display: grid;
+    place-items: center;
+    margin: 30px 0 80px 0;
+}
+
+section .contactForm {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 100%;
+    background: white;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+    border-radius: 30px;
+}
+
+section .contactForm .form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 30px;
+}
+
+section .contactForm .form form {
+    width: 100%;
+}
+
+section .contactForm .form .texto h2 {
+    color: black;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section .contactForm .form .texto p {
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section .contactForm .form form .inputbox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+section .contactForm .form form .inputbox label {
+    color: black;
+    font-weight: 700;
+}
+
+section .contactForm .form form .inputbox input[type="text"],
+section .contactForm .form form .inputbox input[type="email"],
+section .contactForm .form form .inputbox textarea {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    color: black;
+    
+}
+
+section .contactForm .form form .inputbox input[type="text"]:focus,
+section .contactForm .form form .inputbox input[type="email"]:focus,
+section .contactForm .form form .inputbox textarea:focus {
+    outline: 0px solid black;
+}
+
+section .contactForm .form form input[type="submit"] {
+    background: black;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+}
+
+section .contactForm .form form input[type="submit"]:hover {
+    background: gold;
+}
+
+section .contactForm .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .contactForm .info .textBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+section .contactForm .info .textBox .infoContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+section .contactForm .info .textBox .infoContact i {
+    font-size: 2em;
+    margin-right: 10px;
+    color: black;
+}
+
+section .contactForm .info .textBox .infoContact p {
+    color: black;
+}
+
+section .contactForm .info .rrss a {
+    padding: 20px;
+    font-size: 2em;
+    color: black;
+    transition: 0.3s;
+}
+
+section .contactForm .info .rrss a:hover {
+    color: gold;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 1400px) {
+    section{
+        margin-bottom: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .contactForm{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+ }
+
+
+@media only screen and (max-width: 600px) {
+    section{
+        margin-bottom: 40px;
+        width: 100%;
+        height: 100%;
+    }
+    section .contactForm .form{
+     margin-left: 0;
+     width: 100%;
+    }
+ }
+
+
+
+/*Fin de estilos a formulario de contacto*/
+
+
+
+/* Footer*/
+footer {
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials a li {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: gold;
+}
+
+.footer-botton {
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-botton p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.bi {
+    font-size: 19px;
+    margin-right: 10px;
+    color: gold;
+}
+
+/*Logo de email*/
+.fa-regular {
+    font-size: 20px;
+    
+}
+
+/*Logo de telefono*/
+.re {
+    font-size: 200px;
+    color: blue;
+}
+
+/*Logo de Facebook*/
+.fa-brands {
+    font-size: 30px;
+}
